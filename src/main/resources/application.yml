@@ -1,0 +1,14 @@
+
+spring:
+   profiles:
+     include: datasource
+server:
+  port: 8899
+  compression:
+            min-response-size: 512
+            enabled: true
+            mime-types: text/html,text/css,text/javascript,application/javascript,image/gif,image/png,image/jpg
+logging:
+  level:
+    root: debug
+    org.springframework.web: debug
